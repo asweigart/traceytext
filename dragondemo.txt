@@ -1,0 +1,152 @@
+controlpanel
+traceytexthighlight #DDDDFF
+
+view.list.DragonSourceCode.font-family: Courier, monospace; position: absolute; top: 0px; left: 0px; height: 96%; width: 56%; overflow: auto; padding: 4px;
+1, 2, 4, 11, 19, 35, 36, 38, 4, 5, 6, 7, 8, 9, 40, 11, 12, 13, 14, 15, 13, 14, 15, 13, 17, 42, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 44, 45, 36, 38, 4, 5, 6, 7, 8, 9, 40, 11, 12, 13, 14, 15, 13, 17, 42, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 33, 44, 45, 36, 46
+<br/><br/>
+<h1>Source Code</h1>
+<ol>
+<li>import random</li>
+<li>import time</li>
+<li></li>
+<li>def displayIntro():</li>
+<li>    print 'You are on a planet full of dragons. In front of you,'</li>
+<li>    print 'you see two caves. In one cave, the dragon is friendly'</li>
+<li>    print 'and will share his treasure with you. The other dragon'</li>
+<li>    print 'is greedy and hungry, and will eat you on sight.'</li>
+<li>    print</li>
+<li></li>
+<li>def chooseCave():</li>
+<li>    cave = ''</li>
+<li>    while cave != '1' and cave != '2':</li>
+<li>        print 'Which cave will you go into? (1 or 2)'</li>
+<li>        cave = raw_input()</li>
+<li></li>
+<li>    return cave</li>
+<li></li>
+<li>def checkCave(chosenCave):</li>
+<li>    print 'You approach the cave...'</li>
+<li>    time.sleep(2)</li>
+<li>    print 'It is dark and spooky...'</li>
+<li>    time.sleep(2)</li>
+<li>    print 'A large dragon jumps out in front of you! He opens his jaws and...'</li>
+<li>    print</li>
+<li>    time.sleep(2)</li>
+<li></li>
+<li>    friendlyCave = random.randint(1, 2)</li>
+<li></li>
+<li>    if chosenCave == str(friendlyCave):</li>
+<li>        print 'Gives you his treasure!'</li>
+<li>    else:</li>
+<li>        print 'Gobbles you down in one bite!'</li>
+<li></li>
+<li>playAgain = 'yes'</li>
+<li>while playAgain == 'yes' or playAgain == 'y':</li>
+<li></li>
+<li>    displayIntro()</li>
+<li></li>
+<li>    caveNumber = chooseCave()</li>
+<li></li>
+<li>    checkCave(caveNumber)</li>
+<li></li>
+<li>    print 'Do you want to play again? (yes or no)'</li>
+<li>    playAgain = raw_input()</li>
+<li></li>
+</ol>
+
+view.multispan.DragonVariables.position: absolute; top: 0px; left: 60%; height: 32%; width: 36%; overflow: auto; padding: 4px;
+1.<h1>Variables</h1><b>Global Scope</b><br/><br/><b>Local Scope</b><br/>
+7.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'yes'<br/><br/><b>Local Scope</b><br/>
+18.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'yes'<br/><br/><b>Local Scope</b><br/>cave == ''<br/>
+21.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'yes'<br/><br/><b>Local Scope</b><br/>cave == '3'<br/>
+24.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'yes'<br/><br/><b>Local Scope</b><br/>cave == '2'<br/>
+26.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'yes'<br/>caveNumber == '2'<br/><br/><b>Local Scope</b><br/>
+28.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'yes'<br/>caveNumber == '2'<br/><br/><b>Local Scope</b><br/>chosenCave == '2'<br/>
+36.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'yes'<br/>caveNumber == '2'<br/><br/><b>Local Scope</b><br/>chosenCave == '2'<br/>friendlyCave == 2<br/>
+38.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'yes'<br/>caveNumber == '2'<br/><br/><b>Local Scope</b><br/>
+40.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'y'<br/>caveNumber == '2'<br/><br/><b>Local Scope</b><br/>
+51.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'y'<br/>caveNumber == '2'<br/><br/><b>Local Scope</b><br/>cave == ''<br/>
+54.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'y'<br/>caveNumber == '2'<br/><br/><b>Local Scope</b><br/>cave == '1'<br/>
+56.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'y'<br/>caveNumber == '1'<br/><br/><b>Local Scope</b><br/>
+58.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'y'<br/>caveNumber == '1'<br/><br/><b>Local Scope</b><br/>chosenCave == '1'<br/>
+66.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'y'<br/>caveNumber == '1'<br/><br/><b>Local Scope</b><br/>chosenCave == '1'<br/>friendlyCave == 2<br/>
+68.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'y'<br/>caveNumber == '1'<br/><br/><b>Local Scope</b><br/>
+70.<h1>Variables</h1><b>Global Scope</b><br/>playAgain == 'n'<br/>caveNumber == '1'<br/><br/><b>Local Scope</b><br/>
+
+view.simple.DragonNotes.position: absolute; top: 33%; left: 60%; height: 32%; width: 36%; overflow: auto; padding: 4px;
+default.<h1>Notes</h1>
+1.<h1>Notes</h1>This imports the <span class='m'>random</span> module, which has the <span class='m'>randint()</span> function we will use.
+2.<h1>Notes</h1>This imports the <span class='m'>time</span> module, which has the <span class='m'>sleep()</span> function we will use.
+3.<h1>Notes</h1>This defines the <span class='m'>displayIntro()</span> function. Execution will skip past this function, because we are only defining the function, not calling it.
+4.<h1>Notes</h1>This defines the <span class='m'>chooseCave()</span> function. Again, we are only defining the function, not calling it.
+5.<h1>Notes</h1>This defines the <span class='m'>checkCave()</span> function. <span class='m'>checkCave()</span> is defined with one parameter, <span class='m'>chosenCave</span>. Parameters are the variables that go in between the parentheses in a function definition.
+6.<h1>Notes</h1>Here we set the <span class='m'>playAgain</span> variable to <span class='m'>'yes'</span>. We do this because our game will keep playing in a loop as long as <span class='m'>playAgain</span> is set to <span class='m'>'yes'</span> or <span class='m'>'y'</span>.
+7.<h1>Notes</h1>This <span class='m'>while</span> loop's condition checks to see if <span class='m'>playAgain</span> has the <span class='m'>'yes'</span> string or the <span class='m'>'y'</span> string stored in it.
+8.<h1>Notes</h1>The first thing we do inside the loop is call the <span class='m'>displayIntro()</span> function. This will move execution to line 4.
+9.<h1>Notes</h1>Here we are at the start of the <span class='m'>displayIntro()</span> function.
+10.<h1>Notes</h1>We now print the game's introduction to the player.
+11.<h1>Notes</h1>We now print the game's introduction to the player.
+12.<h1>Notes</h1>We now print the game's introduction to the player.
+13.<h1>Notes</h1>We now print the game's introduction to the player.
+14.<h1>Notes</h1>We print a blank line.
+15.<h1>Notes</h1>Since the <span class='m'>displayIntro()</span> function ended, the program's execution moves to the next line after the original function call. On this line, we call <span class='m'>chooseCave()</span> and then assign the function call's return value to the <span class='m'>caveNumber</span> variable.
+16.<h1>Notes</h1>This is the start of the <span class='m'>chooseCave()</span> function.
+17.<h1>Notes</h1><span class='m'>cave</span> is first assigned the blank string. Remember that because we are inside a function, new variables will be in the local scope.
+18.<h1>Notes</h1>This loop will continue to loop until the <span class='m'>cave</span> variable is equal to either <span class='m'>'1'</span> or <span class='m'>'2'</span>
+19.<h1>Notes</h1>We ask the player which cave they want to enter.
+20.<h1>Notes</h1>Let's pretend the player entered 3 as their answer.
+21.<h1>Notes</h1>Since the <span class='m'>cave</span> variable is equal to <span class='m'>'3'</span>, both parts of the condition are <span class='m'>True</span>, so the loop's condition is <span class='m'>True</span> and we enter the loop again.
+22.<h1>Notes</h1>We ask the player to enter a cave number again.
+23.<h1>Notes</h1>Let's pretend the player entered 2.
+24.<h1>Notes</h1>Because cave is not equal to <span class='m'>'1'</span> but is equal to <span class='m'>'2'</span>, this expression becomes <span class='m'>True and False</span>, which evaluates to <span class='m'>False</span>. (The <span class='m'>and</span> operator requires both sides to be <span class='m'>True</span> in order to evalute to <span class='m'>True</span>).
+25.<h1>Notes</h1>We skip past the loop, and for the return value of this function call, we return the string <span class='m'>'2'</span>.
+26.<h1>Notes</h1>When we leave a function, the variables in the function's local scope are forgotten and destroyed. Now we call the <span class='m'>checkCave()</span> function.
+27.<h1>Notes</h1><span class='m'>chosenCave</span> is a parameter for this function, and will be assigned the value in <span class='m'>caveNumber</span> (which was the argument when this function was called).
+29.<h1>Notes</h1>This call to the <span class='m'>time.sleep()</span> function will cause the program to pause for 2 seconds.
+35.<h1>Notes</h1>We make a call to <span class='m'>random.randint()</span> to have it randomly return a <span class='m'>1</span> or a <span class='m'>2</span>, which is stored in the local variable, <span class='m'>friendlyCave</span>. Let's pretend the value randomly selected was <span class='m'>2</span>.
+36.<h1>Notes</h1>The return value of the <span class='m'>str(friendlyCave)</span> call was the string <span class='m'>'2'</span>, which is equal to the stirng stored in <span class='m'>chosenCave</span>. That makes the condition evaluate to <span class='m'>True</span>.
+37.<h1>Notes</h1>The player has won the treasure!
+38.<h1>Notes</h1>Again, now that the execution has moved out of the function, all the local variables are destroyed. Now we ask the player if she wants to play again.
+39.<h1>Notes</h1>Let's pretend the player typed in y.
+40.<h1>Notes</h1>The right side of the <span class='m'>or</span> operator evaluates to <span class='m'>True</span>, which makes the entire condition evaluate to <span class='m'>True</span>. We enter the <span class='m'>while</span> loop again.
+53.<h1>Notes</h1>Let's pretend the player enters 1.
+56.<h1>Notes</h1>The value of <span class='m'>caveNumber</span> was changed to the return value of the function call to <span class='m'>chooseCave() (which was <span class='m'>'1'</span>). Now we call <span class='m'>checkCave()</span>, passing <span class='m'>caveNumber</span>'s value as the argument.
+65.<h1>Notes</h1>This time, let's pretend the random integer returned by <span class='m'>randint()</span> was <span class='m'>1</span>.
+66.<h1>Notes</h1>This condition evaluates to <span class='m'>False</span>.
+67.<h1>Notes</h1>Because the <span class='m'>if</span> statement's condition was <span class='m'>False</span>, we will execute the code in the else-block. The player has been eaten.
+69.<h1>Notes</h1>Let's say the player is tired of playing this game, and she enters n.
+70.<h1>Notes</h1>Since neither side of the <span class='m'>or</span> operator evaluates the <span class='m'>True</span>, the entire condition evaluates to <span class='m'>False</span>. So we skip past the while-block.
+71.<h1>Notes</h1>There are no more lines of code to execute, so the program terminates.
+
+view.appendscroll.DragonOutput.position: absolute; top: 66%; left: 60%; height: 31%; width: 36%; overflow: auto; padding: 4px; color: 0000FF;
+1.<h1>Output</h1>
+11.You are on a planet full of dragons. In front of you,<br/>
+12.you see two caves. In one cave, the dragon is friendly<br/>
+13.and will share his treasure with you. The other dragon<br/>
+14.is greedy and hungry, and will eat you on sight.<br/>
+15.<br/>
+20.Which cave will you go into? (1 or 2)<br/>
+21.<font color="000000">3</font><br/>
+23.Which cave will you go into? (1 or 2)<br/>
+24.<font color="000000">2</font><br/>
+29.You approach the cave...<br/>
+31.It is dark and spooky...<br/>
+33.A large dragon jumps out in front of you! He opens his jaws and...<br/>
+34.<br/>
+38.Gives you his treasure!<br/>
+39.Do you want to play again? (yes or no)<br/>
+40.<font color="000000">y</font><br/>
+44.You are on a planet full of dragons. In front of you,<br/>
+45.you see two caves. In one cave, the dragon is friendly<br/>
+46.and will share his treasure with you. The other dragon<br/>
+47.is greedy and hungry, and will eat you on sight.<br/>
+48.<br/>
+53.Which cave will you go into? (1 or 2)<br/>
+54.<font color="000000">1</font><br/>
+59.You approach the cave...<br/>
+61.It is dark and spooky...<br/>
+63.A large dragon jumps out in front of you! He opens his jaws and...<br/>
+64.<br/>
+68.Gobbles you down in one bite!<br/>
+69.Do you want to play again? (yes or no)<br/>
+70.<font color="000000">n</font><br/>
